@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>yangi dars</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+   <nav class="navbar  navbar-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+         <div  class=" navbarContext d-flex  justify-content-around text-light align-items-center" type="none">
+            <li class="navbarText">home</li>
+            <li  class="navbarText">about</li>
+            <li  class="navbarText">team</li>
+            <li  class="navbarText">support</li>
+            <li  class="navbarText">help</li>
+            <button class="btn btn-outline-warning">login</button>
+            
+            <input type="checkbox" id="mode">
+            <button class="btn btn-light" onclick="toEnd()"><i class="bi bi-arrow-down"></i></button>
+         </div>
+         <i class="bi bi-list d-xl-none d-block menu"></i>
+      </div>
+    </nav>
+    <div class="card  p-5 w-75 mx-auto mt-5">
+     
+     <div class="input-group">
+      <input type="text" class="form form-control input" placeholder="type here..">
+     <button class="btn btn-primary" id="sendBtn">send</button>
+     </div>
+    </div>
+    <div class="modal d-block" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" id="closeX"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="mb-3 " > sizning ismingiz <span class="text"></span> .shundaymi</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" id="close">yo'q</button>
+            <button type="button" class="btn btn-success" id="save">ha</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="card mx-auto p-4 my-4">
+        <select id="colorPicker" class="form-select" aria-label="Default select example">
+          <option selected> ranglarni tatlang</option>
+          <option value="white" >Oq</option>
+          <option value="black">Qora</option>
+          <option value="blue">Ko'k</option>
+          <option value="green">Yashil</option>
+          <option value="yellow">Sariq</option>
+          <option value="red">Qizil</option>
+        </select>
+        <div class="colorZone"></div>
+
+      </div>
+      <div class="card mx-auto p-4 my-4">
+        <select id="imgPicker" class="form-select" aria-label="Default select example">
+          <option selected> rasm turini tatlang</option>
+          <option value="nature" >tabiat</option>
+          <option value="cars">aftomobillar</option>
+          <option value="animals">hayvonot olami</option>
+        </select>
+        
+          <img class="imgZone rounded" src="https://api.uznews.uz/images/default-image.jpg" >
+        </div>
+
+      </div>
+      <div class="card mx-auto p-4 my-4" id="cardsWrapper">
+        <button class="btn btn-primary" id="addCards"> add card</button>
+        <div class="cardArea d-flex justify-content-around flex-wrap" id="newCards"></div>
+      </div>
+      <div class=" mx-auto w-50 p-3 my-4 scrollcard scrollCard  ">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eligendi laboriosam saepe adipisci atque numquam molestiae iusto voluptatibus nihil porro, deleniti veritatis distinctio magnam voluptatum beatae dolor tempore! Animi repellat laboriosam eligendi asperiores quod cumque libero accusantium optio ipsa suscipit! Nulla ipsa at cumque neque perferendis. Placeat, ipsam recusandae quas dolorum, ipsa consectetur consequuntur inventore perferendis a, quam dolores cupiditate. Sapiente doloremque repellendus saepe amet, voluptatem corrupti dolorum tempora harum aperiam iusto vel obcaecati nostrum rem consequuntur qui ratione iure nisi reiciendis nam placeat maxime voluptatibus quisquam provident. Totam tenetur incidunt nesciunt culpa, ullam laudantium, dignissimos tempore voluptatum accusantium possimus at quod reiciendis rem! Ipsa corporis voluptatem quae asperiores libero blanditiis distinctio, dolore ab, eaque animi sunt repudiandae vitae fugit, porro autem. Vero veniam porro ipsa id sit earum neque nihil vel perferendis reprehenderit aut iure est optio laudantium dolorem, velit debitis asperiores reiciendis minima! Dolor perferendis repellendus maxime expedita vitae omnis ab, dolores libero vel, quisquam magnam in sit voluptatem quidem deleniti autem hic sequi aut dolorem. Debitis quam maiores voluptatum minus iusto exercitationem atque doloremque maxime beatae alias ipsam sequi, cum distinctio totam minima nam natus molestias. Exercitationem sapiente vel sint, consectetur minus nostrum aliquid laboriosam ab reiciendis, dolores aliquam. Labore molestiae quisquam nostrum necessitatibus impedit mollitia corporis fugit aliquid officia, voluptas porro atque eius asperiores ad magni error? Impedit, incidunt esse sit commodi dolor nihil omnis veniam ipsum consequuntur, voluptatum harum totam eos consequatur? Eum ipsam eligendi velit impedit aperiam corrupti ex repellat consequuntur rerum voluptatum amet eos beatae, laudantium similique et ab sed! Ipsam nam voluptas tempora maxime. Qui, sequi. Alias omnis iusto neque aliquid, cum nam amet nesciunt qui non velit atque commodi itaque quod quia officia, porro facere officiis fugiat tempora voluptates fugit nostrum dicta nisi. Earum, facere quaerat. Reiciendis quos corporis atque! Fugiat fugit deleniti placeat quo dolor. Autem aut voluptatum numquam ratione voluptatibus saepe sapiente nulla, hic cumque beatae, accusamus animi necessitatibus repellat reiciendis nesciunt qui architecto asperiores dignissimos? Quia debitis id, possimus suscipit mollitia nesciunt animi error similique repudiandae quibusdam, soluta omnis provident distinctio? Sint inventore sit libero iste molestias est nostrum ipsum corrupti quae a beatae laboriosam, perspiciatis voluptatem blanditiis aliquam? Libero modi ab architecto quisquam praesentium reprehenderit, ea recusandae exercitationem consequuntur repellat vitae possimus, soluta molestiae laborum deserunt aliquam cum ex facilis dolore placeat porro pariatur, voluptate sapiente commodi! Illum reiciendis fugiat voluptates ipsa debitis dolorem vitae corporis provident hic, a vero saepe, facere vel est amet aliquam repellat deleniti excepturi assumenda, voluptatum maxime unde. Quasi, quo voluptatum? Natus ipsam eaque temporibus aspernatur quisquam sint deleniti tenetur quidem excepturi laboriosam sunt, similique ipsa distinctio accusamus laborum atque. Quidem quam quo ad reiciendis commodi autem amet tempora est reprehenderit error nostrum quod delectus suscipit sed animi ratione eligendi, explicabo labore. Consequatur quas, commodi nemo vero explicabo quidem corrupti in temporibus et necessitatibus. Repudiandae, mollitia delectus aut esse, culpa officia tempore quo voluptates iure aperiam eligendi vitae eos iusto vero, consequatur odit? In nam aliquam, optio cumque consequuntur pariatur consectetur est nemo eveniet architecto delectus excepturi ab quis iure nihil quasi. Repellat rem, neque beatae vel quaerat quidem quasi facere consequatur quibusdam facilis impedit quis ullam voluptatum quod, veritatis perferendis iste, nostrum unde voluptatibus perspiciatis aliquam est tempora dignissimos sequi. Ipsum delectus nisi omnis, adipisci natus, autem recusandae exercitationem impedit, dolore accusamus fugit nobis assumenda tempora placeat fuga cupiditate. Perferendis ullam fugit explicabo labore beatae! Dolor porro quia recusandae impedit sed consequatur dicta, autem id, ut, provident non? Eos quam quidem voluptatum, delectus aliquid, commodi quibusdam, aliquam ducimus iure officiis repellat rem animi fuga. Ratione omnis inventore hic esse explicabo saepe sed eos quos aliquid rerum, non est quas nisi placeat architecto at porro molestiae accusantium ipsam? Dolorum possimus vel laboriosam exercitationem ea laudantium, velit nam! Natus aliquid fugit asperiores unde impedit. Vel, quis! Fugit, culpa repellendus odio quam corrupti similique ipsam praesentium asperiores laborum aliquam provident qui in voluptatum impedit enim architecto animi atque? Adipisci dolore nam quo necessitatibus, maxime quaerat provident quasi eveniet deserunt quibusdam explicabo ducimus sapiente distinctio ipsam a, voluptas nulla non ad. Odio expedita, corporis non repellendus doloremque optio labore nulla? Quod iure quis vero tenetur dolores dolore, nam aliquid ipsam facilis ex, corporis labore praesentium nulla. Illo accusantium voluptatum omnis, rem soluta delectus debitis deleniti tenetur aspernatur? Quis corrupti asperiores assumenda? Aliquam illo iure nostrum error velit! Veritatis iste repudiandae vel error mollitia sunt odit, ducimus, sit quisquam minus illo quibusdam ab est dolore quod velit, architecto maxime. Facilis aspernatur illo corporis sapiente provident laborum, qui assumenda similique blanditiis praesentium maiores quod maxime laudantium omnis ad ullam a ducimus nemo sint odio? Accusantium officiis culpa ipsum quam molestias impedit accusamus assumenda qui voluptatibus nisi sunt explicabo laudantium esse, ea magni deserunt ut incidunt provident possimus amet. A eaque, ratione sed nostrum hic rem eligendi at?
+      </div>
+      
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>
